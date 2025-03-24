@@ -3,13 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="#">
-        <title>#</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Medical Appointments - Login</title>
     </head>
     <body>
         <header>
-            <!--La idea de esto es que cuando le de click al logo vaya al index-->>
-            <a href="index.html"><img src="#" alt="Logo"></a>
+            <div class="logo-titulo">
+                <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+                <h1>Medical Appointments</h1>
+            </div>
+            <div class="contacto-info">
+                <img src="img/cel.png" alt="Cel" class="cel">
+                <span>+506 2222 2222</span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="about.html">About</a></li>
@@ -19,21 +25,29 @@
             </nav>
         </header>
 
-        <form>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username">
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
+        <div class="login-container">
+            <h2>Login</h2>
+            <div class="avatar">
+                <img src="img/avatar.png" alt="Avatar">
+            </div>
+            <form>
+                <div class="input-group">
+                    <img src="img/user-icon.png" alt="User Icon" class="user-icon">
+                    <input type="text" id="username" name="username" placeholder="User id">
+                </div>
+                <div class="input-group">
+                    <img src="img/key-icon.png" alt="Key Icon" class="user-icon">
+                    <input type="password" id="password" name="password" placeholder="User Password">
+                </div>
+                <button type="submit" class="login-button">Log in</button>
+            </form>
+            <div class="register-options">
+                <p>Don't have an account?</p>
+                <a href="./User/register.html" class="register-button">Register as Client</a>
+                <a href="./Medic/register.html" class="register-button">Register as Medic</a>
+            </div>
+        </div>
 
-            <input type="button" value="login">
-        </form>
-
-        <section>
-            <a href="./User/register.html">Register as client</a>
-            <a href="./Medic/register.html">Register as medic</a>
-        </section>
-        
         <footer>
             <p>&copy;2025</p>
         </footer>

@@ -1,0 +1,21 @@
+<header th:fragment="nav">
+
+    <div class="logo-titulo">
+        <a th:href="@{/index}">
+            <img src="/img/logo.png" alt="logo" class="logo">
+        </a>
+        <h1>Medical Appointments</h1>
+    </div>
+    <div class="contacto-info">
+        <img src="/img/cel.png" alt="Cel" class="cel">
+        <span>+506 2222 2222</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#popup">About</a></li>
+            <li><a th:href="@{/search}">Search</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
+        </ul>
+    </nav>
+
+</header>

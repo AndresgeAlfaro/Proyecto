@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C5E1A5;
+    padding: 10px 20px;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    color: #388E3C;
+    font-size: 24px;
+}
+
+.contacto-info {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #388E3C;
+}
+
+.cel {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.avatar img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.input-group .user-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+}
+
+.login-button {
+    background: #388E3C;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background: #2E7D32;
+}
+
+.register-options {
+    margin-top: 15px;
+}
+
+.register-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: 1px solid #388E3C;
+    border-radius: 5px;
+    color: #388E3C;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register-button:hover {
+    background: #C5E1A5;
+}

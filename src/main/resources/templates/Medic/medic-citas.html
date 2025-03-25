@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Mismo head -->
+</head>
+<body>
+    <header><!-- Header con navegación --></header>
+
+    <main class="appointments-container">
+        <h1>Gestión de Citas</h1>
+        
+        <div class="filters">
+            <form action="#" method="GET">
+                <select name="estado">
+                    <option value="todas">Todas las citas</option>
+                    <option value="pendiente">Pendientes</option>
+                    <option value="completada">Completadas</option>
+                </select>
+                <input type="text" name="busqueda" placeholder="Buscar por paciente">
+                <button type="submit">Filtrar</button>
+            </form>
+        </div>
+
+        <table class="appointments-list">
+            <thead>
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Paciente</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ejemplo de fila -->
+                <tr>
+                    <td>2024-03-20 10:00</td>
+                    <td>Juan Pérez</td>
+                    <td>Pendiente</td>
+                    <td>
+                        <button class="complete-btn">Completar</button>
+                        <button class="notes-btn">Agregar Notas</button>
+                    </td>
+                </tr>
+                <!-- Más citas -->
+            </tbody>
+        </table>
+
+        <!-- Modal para notas -->
+        <div class="modal notes-modal">
+            <textarea placeholder="Anotaciones de la consulta..."></textarea>
+            <button>Guardar Notas</button>
+        </div>
+    </main>
+</body>
+</html>

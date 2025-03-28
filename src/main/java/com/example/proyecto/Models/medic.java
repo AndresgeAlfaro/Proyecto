@@ -4,15 +4,15 @@ public class medic {
     private String name;
     private String username;
     private String password;
-    private String especiality;
+    private String speciality;
     private int cost;
     private String location;
 
-    public medic(String name, String username, String password, String especiality, int cost, String location) {
+    public medic(String name, String username, String password, String speciality, int cost, String location) {
         this.name = name;
         this.username = username;
         this.password = password;
-        this.especiality = especiality;
+        this.speciality = speciality;
         this.cost = cost;
         this.location = location;
     }
@@ -33,12 +33,12 @@ public class medic {
         this.cost = cost;
     }
 
-    public String getEspeciality() {
-        return especiality;
+    public String getSpeciality() {
+        return speciality;
     }
 
-    public void setEspeciality(String especiality) {
-        this.especiality = especiality;
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
     }
 
     public String getName() {

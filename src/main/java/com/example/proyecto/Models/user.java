@@ -4,6 +4,7 @@ public class user {
     private String name;
     private String username;
     private String password;
+    private boolean admin = false;
 
     public user(String name, String username, String password) {
         this.name = name;
@@ -23,6 +24,10 @@ public class user {
         return username;
     }
 
+    public boolean isAdmin() {
+        return admin;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }
@@ -34,4 +39,12 @@ public class user {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public void enableAdmin() {
+        admin = true;
+    }
+    public void disableAdmin() {
+        admin = false;
+    }
+
 }
